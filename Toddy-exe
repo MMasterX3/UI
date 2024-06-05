@@ -20,39 +20,29 @@ local Tabs = {
 
 Tabs.Main:AddParagraph({
         Title = "Leia:",
-        Content = "Bom caso quiser mudar algo no Hub, só chamar no meu privado!"
+        Content = "Bem vindo! "
+    })
+  
+  Tabs.Main:AddButton({
+        Title = "Copiar @ do tiktok! ",
+        Description = "Cole no google.",
+        Callback = function()
+            setclipboard("https://www.tiktok.com/@toddyhunter1?_t=8mvv8d6DILF&_r=1")
+        end
+    })
+  
+Tabs.Main:AddButton({
+        Title = "Copiar @ do canal do youtube! ",
+        Description = "Cole no google.",
+        Callback = function()
+            setclipboard("https://www.youtube.com/@TODDY1KK")
+        end
     })
   
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     blx = Window:AddTab({ Title = "Blox Fruits", Icon = "cherry" }),
 }
-
- Tabs.blx:AddButton({
-        Title = "RedzHub",
-        Description = "Script para blox fruits.",
-        Callback = function()
-            Window:Dialog({
-                Title = "RedzHub",
-                Content = "Desenha REALMENTE, executar esse script? ",
-                Buttons = {
-                    {
-                        Title = "Sum",
-                        Callback = function()
-                           loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-                            print("Confirmed the dialog.")
-                        end
-                    },
-                    {
-                        Title = "Não",
-                        Callback = function()
-                            print("Cancelled the dialog.")
-                        end
-                    }
-                }
-            })
-        end
-    })
   
   Tabs.blx:AddButton({
         Title = "Tbao hub",
